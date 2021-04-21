@@ -25,6 +25,14 @@
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
                     <input id="name" type="text" name="input" value="" placeholder="Name" pattern="[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)">
+                    <select name="languages" id="lang" onclick="Client.check_language()" required>
+                        <option value="en" selected>EN</option>
+                        <option value="es">ES</option>
+                        <option value="fr">Fr</option>
+                        <option value="it">IT</option>
+                        <option value="pt">PT</option>
+                        <option value="ca">CA</option>
+                      </select>
                     <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             </section>
